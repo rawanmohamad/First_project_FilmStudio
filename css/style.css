@@ -1,0 +1,805 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.header{
+    width:100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0px 25px ;
+    position: fixed;
+    color:#fff;
+    z-index: 999;
+}
+
+.header-left-content{
+    width:25%;
+    height: 50px;
+    float: left;
+}
+
+.header-left-content .i1{
+    line-height: 50px;
+    font-size: 25px;
+    float: left;
+    margin-right: 20px;
+}
+
+.search{
+    width:70%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.search .search-input{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width:100%;
+    height: 60%;
+    border-radius: 50px;
+    background-color: #eee9e9;
+}
+
+.search i{
+    position: absolute;
+    top:52%;
+    left:10%;
+    transform: translate(-50% , -50%);
+    color:#000;
+    z-index: 1;
+}
+
+.header-link{
+    width:75%;
+    height: 100%;
+    float: right;
+    text-align: right;
+}
+
+.list li{
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    margin: 0px 11px;
+    position: relative;
+}
+
+.list li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.list li a:after{
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:blueviolet
+}
+
+.list li a:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-list{
+    position: absolute;
+    top:100%;
+    left: 0;
+    width:140px;
+    background-color: #212121;
+    border-radius: 10px;
+    border: solid 1px blueviolet;
+    padding: 10px;
+    text-align: left;
+    visibility: hidden;
+}
+
+.dropdown:hover .dropdown-list{
+    visibility: visible;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/paddington-in-peru-5120x5013-19205.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width:63%;
+    height: 30%;
+    text-align: center;
+}
+
+.hero-header{
+    font-size: 60px;
+    text-transform: uppercase;
+    color:#fff;
+    margin-bottom: 15px;
+}
+
+.hero-paragragh{
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.btn{
+    width:110px;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.b2{
+    background-color: blueviolet;
+    color: #fff;
+}
+
+.btn:hover{
+    opacity: 0.6;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.about-section{
+    width: 100%;
+    padding : 70px 0px;
+    text-align: center;
+    overflow: auto;
+}
+
+.header2{
+    font-size: 40px;
+    color:#fff;
+    text-transform: capitalize;
+}
+
+.header-underline{
+    width: 100px;
+    height: 3px;
+    background-color: blueviolet;
+}
+
+.line-center{
+    margin: 15px auto ;
+}
+
+.card-with-after-point{
+    width: 28%;
+    height: 200px;
+    float: left;
+    border: solid 1px blueviolet;
+    padding: 15px 0px 0px 0px;
+    border-radius: 10px;
+    margin-top: 35px;
+    position: relative;
+}
+
+.card-with-after-point::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 0;
+    background-color: rgba(137, 43, 226, 0.2);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.card-with-after-point:hover::after{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.center-card{
+    margin: 35px 8% 0px ;
+}
+
+.card-with-after-point i{
+    font-size: 25px;
+    color: blueviolet;
+}
+
+.header3{
+    color:#fff;
+    font-size: 22px;
+}
+
+.about-section .card-with-after-point .header3{
+    margin: 20px 0px;
+}
+
+.card-txt{
+    color:#ccc;
+    font-size: 17px;
+    margin: 25px 0px;
+}
+
+.card-with-after-point:hover .header3{
+    color: blueviolet;
+}
+
+.card-with-after-point:hover .card-txt{
+    color: #fff;
+}
+
+.card-with-after-point a{
+    text-decoration: none;
+    color:#999;
+    font-size: 17px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.movies-section{
+    text-align: center;
+    margin: auto;
+    background-color: #212121;
+    padding : 70px 0px 0px 0px;
+    overflow: auto;
+}
+
+.movies-section-content{
+    width: 70%;
+    margin: 30px auto 0px;
+    overflow: auto;
+}
+
+.movie-card{
+    width: 31%;
+    float: left;
+    position: relative;
+    margin: 3.5% 0px 0px;
+    background-size: cover;
+    background-position: center;
+}
+
+.movies-section-content .center-card{
+    margin: 3.5% 3.5% 0px  ;
+}
+
+.Action{
+    background-image: url(../images/wp2296585-jumanji-welcome-to-the-jungle-wallpapers.jpg); 
+}
+
+.Comedy{
+    background-image: url(../images/Paddington\ \(2014\).jfif);
+}
+
+.Drama{
+    background-image: url(../images/Hacksaw\ Ridge.jfif);
+}
+
+.Horror{
+    background-image: url(../images/wednesday-netflix-5120x2880-22253.jpg);
+}
+
+.Science-Fiction{
+    background-image: url(../images/download\ \(82\).jfif);
+}
+
+.Thriller{
+    background-image: url(../images/Duna\ \(2021\)\ -\ Poster.jfif);
+}
+
+.movie-card-overlay{
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+    visibility: hidden;
+}
+
+.movie-card:hover .movie-card-overlay{
+    visibility: visible;
+}
+
+.movie-card a i{
+    background-color: #fff;
+    width:30px;
+    height: 30px;
+    line-height: 32px;
+    border-radius: 5px;
+    font-size: 18px;
+    color:#777
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.categories-section{
+    width: 100%;
+    padding : 70px 0px;
+    text-align: center;
+    overflow: auto;
+}
+
+.categories-section .card-with-after-point{
+    padding: 18px;
+    text-align: left;
+}
+
+.categories-section .card-with-after-point i{
+    float: left;
+    height: 100%;
+    margin-right: 10px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.Our-Best-Features{
+    padding : 70px 0px;
+    overflow: auto;
+}
+
+.section-data{
+    float: left;
+    width:50%;
+    color: #ccc;
+}
+
+.section-data .header-underline{
+    width: 60px;
+    margin: 15px 0px;
+}
+
+.section-data p{
+    margin: 50px 0px;
+}
+
+.Best-Features{
+    list-style: none;
+}
+
+.Best-Features i{
+    color: blueviolet;
+}
+
+.Best-Features li{
+    list-style: none;
+    line-height: 35px;
+    margin: 15px 0px;
+}
+
+.section-view{
+    float: right;
+    width:32%;
+}
+
+.view-img{
+    width: 100%;
+    height: 420px;
+}
+
+.circles{
+    width: 30%;
+    height: 30px;
+    margin: auto;
+    /* background-color: chartreuse; */
+}
+
+.circle{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin:5px;
+    background-color: #333;
+}
+
+.checked{
+    background-color: blueviolet;
+}
+
+.circle:hover{
+    background-color: blueviolet;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.agency-data{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/wp9912948-halloween-movie-collage-wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:#fff;
+}
+
+.agency-data-overlay{
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    position: relative;
+}
+
+.agency-section-content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50% , -50%);
+}
+.data-block{
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.data-block i{
+    display: inline-block;
+    color: blueviolet;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.Plans-section-content{
+    width: 70%;
+    margin: 30px auto 0px;
+    overflow: auto;
+}
+
+.Plans-section{
+    width: 100%;
+    padding : 70px 0px 100px;
+    text-align: center;
+    overflow: auto;
+}
+
+.card-with-after{
+    float: left;
+    width: 30%;
+    border: solid 1px blueviolet;
+    border-radius: 10px;
+    margin-top: 35px;
+    padding: 30px 0px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+}
+
+.card-with-after::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(137, 43, 226, 0.2);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.card-with-after:hover::after{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.Plans-section .center-card{
+    margin: 35px 5% 0px ;
+}
+
+.header4{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.price{
+    width:95px;
+    height: 95px;
+    padding: 12px;
+    margin: 30px auto ;
+    border: solid 2px blueviolet;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.smaller{
+    font-size: 14px;
+    display: block;
+}
+
+.card-with-after:hover .header4{
+    color: blueviolet;
+}
+
+.card-with-after:hover .price{
+    border: solid 2px rgb(83, 26, 137);
+}
+
+.features{
+    line-height: 45px;
+}
+
+.card-btn{
+    width:170px;
+    height: 30px;
+    border: solid 2px blueviolet;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #111;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.Employees-data{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/ZCch3Ee-avatar-wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:#fff;
+}
+
+.Employees-data .data-block{
+    width: 42%;
+    text-align: left;
+    margin-right: 8%;
+}
+
+.user-img{
+    float: left;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.Employees-data .header3{
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.Employees-data .header4{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: blueviolet;
+}
+
+.Employees-data .data-block p{
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.team-section{
+    width: 100%;
+    padding : 100px 0px 40px;
+    text-align: center;
+    overflow: auto;
+    line-height: 45px;
+    position: relative;
+}
+
+.team-section .center-card{
+    margin: 35px 5% 0px ;
+}
+
+.team-img{
+    width:95%;
+    height: 250px;
+    margin-bottom: 25px;
+}
+
+.team-section .social-media{
+    position: absolute;
+    right:11.5%;
+    top:7%;
+    visibility: hidden;
+}
+
+.team-section .social-media i{
+    display: block;
+    width:37px;
+    height: 37px;
+    line-height: 37px;
+    background-color: blueviolet;
+}
+
+.card-with-before{
+    float: left;
+    width: 30%;
+    border: solid 1px blueviolet;
+    border-radius: 10px;
+    margin-top: 35px;
+    padding: 30px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+}
+
+.card-with-before::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(137, 43, 226, 0.2);
+    z-index: 9;
+}
+
+.card-with-before:hover::before{
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.card-with-before:hover .social-media{
+    visibility: visible;
+}
+
+.card-with-before .header4{
+    color: #d1cfcf;
+}
+
+.card-with-before:hover .header3{
+    color: blueviolet;
+}
+
+.card-with-before:hover .header4{
+    color: #999;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.recent-news{
+    width: 100%;
+    padding : 40px 0px 100px;
+    text-align: center;
+    overflow: auto;
+}
+
+.recent-news .center-card{
+    margin: 35px 5% 0px ;
+}
+
+.recent-news .team-img{
+    width: 80%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.recent-news  .social-media i {
+    color: blueviolet;
+}
+
+.social-media h5{
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.recent-news .header3{
+    font-size: 18px;
+    margin: 25px 0px;
+}
+
+.recent-news .card-with-after{
+    margin-top: 35px ;
+}
+
+.recent-news .card-with-after p{
+    color: #ccc;
+    margin-bottom: 25px;
+    padding: 0px 5px ;
+}
+
+.recent-news .card-with-after a{
+    text-decoration: none;
+    color:#999;
+    font-size: 17px;
+}
+
+.recent-news .card-with-after:hover .header3{
+    color: blueviolet;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.footer{
+    width: 100%;
+    background-color: #212121;
+    padding: 25px;
+    text-align: center;
+}
+
+.footer-img{
+    width: 285px;
+    height: 185px;
+    display: block;
+    margin: 0px auto 20px ;
+    border-radius: 10px;
+}
+
+.links i{
+    font-size: 28px;
+    width: 50px;
+    height: 50px ;
+    line-height: 52px;
+    background-color: #555;
+    border-radius: 50%;
+    color:#fff;
+    margin-right: 5px;
+}
+
+.links i:hover{
+    background-color: #333;
+}
+
+.footer p{
+    margin-top: 15px;
+    color: #ccc;
+    text-transform: uppercase;
+    font-size: 14px;
+}
