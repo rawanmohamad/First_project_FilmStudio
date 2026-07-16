@@ -257,13 +257,13 @@ body{
 }
 
 .about-section .card-with-after-point .header3{
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 
 .card-txt{
     color:#ccc;
     font-size: 17px;
-    margin: 25px 0px;
+    margin: 15px 0px;
 }
 
 .card-with-after-point:hover .header3{
@@ -347,11 +347,11 @@ body{
 
 .movie-card a i{
     background-color: #fff;
-    width:30px;
-    height: 30px;
+    width:35px;
+    height: 32px;
     line-height: 32px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 22px;
     color:#777
 }
 
@@ -375,6 +375,9 @@ body{
     margin-right: 10px;
 }
 
+.categories-section .card-with-after-point .card-txt{
+
+}
 /* ///////////////////////////////////////////////////////////////////////// */
 
 .Our-Best-Features{
@@ -386,6 +389,7 @@ body{
     float: left;
     width:50%;
     color: #ccc;
+    padding : 70px 0px;
 }
 
 .section-data .header-underline{
@@ -418,7 +422,7 @@ body{
 
 .view-img{
     width: 100%;
-    height: 420px;
+    height: 470px;
 }
 
 .circles{
